@@ -14,6 +14,8 @@
 		8A82A1B513C6E6CA001B1FFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A82A1B413C6E6CA001B1FFF /* main.m */; };
 		8A82A1B813C6E6CA001B1FFF /* HomepwnerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A82A1B713C6E6CA001B1FFF /* HomepwnerAppDelegate.m */; };
 		8A82A1BB13C6E6CA001B1FFF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A82A1B913C6E6CA001B1FFF /* MainWindow.xib */; };
+		8A82A1C313C6E799001B1FFF /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A82A1C213C6E799001B1FFF /* ItemsViewController.m */; };
+		8A82A1C613C6EC87001B1FFF /* Possession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A82A1C513C6EC87001B1FFF /* Possession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +23,17 @@
 		8A82A1A713C6E6CA001B1FFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A82A1A913C6E6CA001B1FFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A82A1AB13C6E6CA001B1FFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8A82A1AF13C6E6CA001B1FFF /* Homepwner-Info.plist */ = {isa = PBXFileReference; path = "Homepwner-Info.plist"; sourceTree = "<group>"; };
+		8A82A1AF13C6E6CA001B1FFF /* Homepwner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homepwner-Info.plist"; sourceTree = "<group>"; };
 		8A82A1B113C6E6CA001B1FFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8A82A1B313C6E6CA001B1FFF /* Homepwner-Prefix.pch */ = {isa = PBXFileReference; path = "Homepwner-Prefix.pch"; sourceTree = "<group>"; };
+		8A82A1B313C6E6CA001B1FFF /* Homepwner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homepwner-Prefix.pch"; sourceTree = "<group>"; };
 		8A82A1B413C6E6CA001B1FFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A82A1B613C6E6CA001B1FFF /* HomepwnerAppDelegate.h */ = {isa = PBXFileReference; path = HomepwnerAppDelegate.h; sourceTree = "<group>"; };
+		8A82A1B613C6E6CA001B1FFF /* HomepwnerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomepwnerAppDelegate.h; sourceTree = "<group>"; };
 		8A82A1B713C6E6CA001B1FFF /* HomepwnerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerAppDelegate.m; sourceTree = "<group>"; };
 		8A82A1BA13C6E6CA001B1FFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		8A82A1C113C6E799001B1FFF /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemsViewController.h; path = ../ItemsViewController.h; sourceTree = "<group>"; };
+		8A82A1C213C6E799001B1FFF /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsViewController.m; path = ../ItemsViewController.m; sourceTree = "<group>"; };
+		8A82A1C413C6EC87001B1FFF /* Possession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Possession.h; sourceTree = "<group>"; };
+		8A82A1C513C6EC87001B1FFF /* Possession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Possession.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				8A82A1B613C6E6CA001B1FFF /* HomepwnerAppDelegate.h */,
+				8A82A1C213C6E799001B1FFF /* ItemsViewController.m */,
+				8A82A1C413C6EC87001B1FFF /* Possession.h */,
+				8A82A1C113C6E799001B1FFF /* ItemsViewController.h */,
+				8A82A1C513C6EC87001B1FFF /* Possession.m */,
 				8A82A1B713C6E6CA001B1FFF /* HomepwnerAppDelegate.m */,
 				8A82A1B913C6E6CA001B1FFF /* MainWindow.xib */,
 				8A82A1AE13C6E6CA001B1FFF /* Supporting Files */,
@@ -157,6 +167,8 @@
 			files = (
 				8A82A1B513C6E6CA001B1FFF /* main.m in Sources */,
 				8A82A1B813C6E6CA001B1FFF /* HomepwnerAppDelegate.m in Sources */,
+				8A82A1C313C6E799001B1FFF /* ItemsViewController.m in Sources */,
+				8A82A1C613C6EC87001B1FFF /* Possession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
