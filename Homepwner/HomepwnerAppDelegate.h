@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ItemsViewController;
 
 @interface HomepwnerAppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window;
+    ItemsViewController *itemsViewController;
 
 }
 

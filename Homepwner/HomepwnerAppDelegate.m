@@ -11,10 +11,16 @@
 @implementation HomepwnerAppDelegate
 
 
-@synthesize window=_window;
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Create a ItemsViewController
+    itemsViewController = [[ItemsViewController alloc]init];
+    
+    //Place ItemsViewController's table view in the window hierarchy
+    [window addSubview:[itemsViewController view]];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
@@ -61,7 +67,7 @@
 
 - (void)dealloc
 {
-    [_window release];
+    [window release];
     [super dealloc];
 }
 
