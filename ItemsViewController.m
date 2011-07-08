@@ -36,10 +36,21 @@
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    // Check for a reusable cell first, use that if it exist
+    UITableViewCell *cell = 
+    [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    
+    // If there is not reusable cell of this type, create a new one
+    if (!cell) {
+    
+    
+    
     // Create an instance of UITableViewCell, with default appearance
-    UITableViewCell *cell =
-    [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault 
-                           reuseIdentifier:@"UITableViewCell"] autorelease];
+     cell = [[[UITableViewCell alloc]
+              initWithStyle:UITableViewCellStyleDefault 
+              reuseIdentifier:@"UITableViewCell"] autorelease];
+    }
+    
     // Set the text on the cell with the description of the possession
     // that is at the nth index of possessions, where n = row this cell
     // will appear in on the table view
